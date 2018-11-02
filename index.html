@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Rate It</title>
+	<script>
+		function rateIt() {
+			var rate = parseInt(prompt("Rate the site from 1 to 10, with 10 as the best."));
+			var grade = "";
+			if (rate == 10) {
+				grade = "A";
+			}
+			else if (rate >= 7 && rate <= 9) {
+				grade = "B";
+			}
+			else if (rate >= 4 && rate < 7) {
+				grade = "C";
+			}
+			else {
+				grade = "D";
+			}
+			document.write("<p> You gave this site a grade of " + grade + ".</p>");
+
+		}
+		function rateItSwitch() {
+			var rate = parseInt(prompt("Rate the site from 1 to 10, with 10 as the best."));
+			var grade = "";
+			switch (rate) {
+				case 10:
+					grade = "A";
+					document.write("<p> You gave this site a grade of " + grade + ".</p>");
+					break;
+				case 9:
+					grade = "B";
+					document.write("<p> You gave this site a grade of " + grade + ".</p>");
+					break;
+				case 8:
+					grade = "B";
+					document.write("<p> You gave this site a grade of " + grade + ".</p>");
+					break;
+				case 7:
+					grade = "B";
+					document.write("<p> You gave this site a grade of " + grade + ".</p>");
+					break;
+				case 6:
+					grade = "C";
+					document.write("<p> You gave this site a grade of " + grade + ".</p>");
+					break;
+				case 5:
+					grade = "C";
+					document.write("<p> You gave this site a grade of " + grade + ".</p>");
+					break;
+				case 4:
+					grade = "C";
+					document.write("<p> You gave this site a grade of " + grade + ".</p>");
+					break;
+				case 3:
+					grade = "D";
+					document.write("<p> You gave this site a grade of " + grade + ".</p>");
+					break;
+				case 2:
+					grade = "D";
+					document.write("<p> You gave this site a grade of " + grade + ".</p>");
+					break;
+				case 1:
+					grade = "D";
+					document.write("<p> You gave this site a grade of " + grade + ".</p>");
+					break;
+				default:
+					document.write("<p>Invalid Entry</p>");
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<h1>Rate the site</h1>
+<h3>
+	rate the site from 1 to 10, with 10 as the best ever and
+	1 as one of the worst
+</h3>
+<p>
+	<input type="button" id="rating" value="enter your rating now"
+		   onclick="rateIt();" />
+</p>
+<h3>
+	rate the site from 1 to 10, with 10 as the best ever and
+	1 as one of the worst
+</h3>
+<p>
+	<input type="button" id="ratingSwitch" value="enter your rating now"
+		   onclick="rateItSwitch();" />
+</p>
+</body>
+</html>
